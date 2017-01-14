@@ -105,10 +105,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PitchPerfect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKy-75-1gF" userLabel="Title">
+                                <rect key="frame" x="140" y="174.5" width="95" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.25958622850000002" green="0.82279130050000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a17-jw-rHI" firstAttribute="top" secondItem="Jkv-uw-m1C" secondAttribute="bottom" constant="50" id="7ng-S1-WyT"/>
+                            <constraint firstItem="Jkv-uw-m1C" firstAttribute="top" secondItem="YKy-75-1gF" secondAttribute="bottom" constant="69" id="LbN-ml-ukV"/>
+                            <constraint firstItem="YKy-75-1gF" firstAttribute="centerX" secondItem="Jkv-uw-m1C" secondAttribute="centerX" id="gcj-BH-uWn"/>
                             <constraint firstItem="Jkv-uw-m1C" firstAttribute="leading" secondItem="MUI-v8-d9V" secondAttribute="leadingMargin" constant="20" id="iEd-vz-WOM"/>
                             <constraint firstItem="Jkv-uw-m1C" firstAttribute="top" secondItem="dxc-Et-jyf" secondAttribute="bottom" constant="200" id="qgx-zr-gT7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Jkv-uw-m1C" secondAttribute="trailing" constant="20" id="roT-F8-phw"/>
@@ -364,10 +372,10 @@
             </objects>
             <point key="canvasLocation" x="5809" y="2368"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting Color View Controller-->
         <scene sceneID="ART-6A-vJf">
             <objects>
-                <viewController id="E5g-jp-e7Y" sceneMemberID="viewController">
+                <viewController id="E5g-jp-e7Y" customClass="SettingColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k8A-ar-tZ5"/>
                         <viewControllerLayoutGuide type="bottom" id="JN1-f5-8Ns"/>
@@ -377,21 +385,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XMc-g4-0tB">
-                                <rect key="frame" x="16" y="120" width="343" height="484"/>
+                                <rect key="frame" x="16" y="164" width="343" height="440"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gov-Sh-DbX">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="454"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="410"/>
                                     </pickerView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BGV-Gq-dcW">
-                                        <rect key="frame" x="0.0" y="454" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="410" width="343" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZu-JK-J08">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZu-JK-J08" userLabel="Apply">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Apply"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGz-sd-FKg">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGz-sd-FKg" userLabel="Cancel">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Cancel"/>
                                             </button>
                                         </subviews>
                                     </stackView>

@@ -38,6 +38,7 @@ class PlaySoundsViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
+        stopButton.isEnabled = true
 //        switch(ButtonType(rawValue: sender.tag)!) {
 //        case .speed:
 //            playSound(rate: soundsRate)
@@ -55,6 +56,7 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func stopButtonPressed(_ sender: AnyObject) {
         print("Stop Audio Button Pressed")
         stopAudio()
+        stopButton.isEnabled = false
     }
     
     override func viewDidLoad() {
